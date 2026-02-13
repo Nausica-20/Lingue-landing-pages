@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Offerta Babbel Lifetime | -24% di Sconto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --b-orange: #FF6E00;
+            --b-blue: #002447;
+            --b-light: #f4f7f9;
+            --promo-red: #e31b23;
+            --text: #1a1a1a;
+        }
+
+        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+        body { 
+            font-family: 'Montserrat', sans-serif; 
+            margin: 0; padding: 0; 
+            background-color: #fff; 
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .container { width: 100%; max-width: 480px; margin: 0 auto; padding: 20px; }
+
+        /* Promo Bar */
+        .promo-bar {
+            background-color: var(--promo-red);
+            color: white;
+            text-align: center;
+            padding: 8px;
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Header */
+        header { text-align: center; padding: 20px 0; border-bottom: 1px solid #eee; }
+        .logo { font-weight: 700; font-size: 22px; color: var(--b-blue); text-decoration: none; }
+
+        /* Hero Promo */
+        .hero { text-align: center; padding: 30px 20px; background: white; }
+        .hero h1 { font-size: 28px; color: var(--b-blue); line-height: 1.2; margin-bottom: 15px; }
+        .highlight { color: var(--b-orange); }
+        .hero p { font-size: 16px; color: #555; margin-bottom: 20px; }
+
+        /* Badge Sconto */
+        .sconto-badge {
+            display: inline-block;
+            background: var(--b-orange);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(255, 110, 0, 0.2);
+        }
+
+        /* Comparison Table */
+        .comp-box { 
+            background: var(--b-light); 
+            border-radius: 15px; 
+            padding: 20px; 
+            margin-bottom: 30px;
+            border: 2px solid var(--b-orange);
+        }
+        .comp-title { font-weight: 700; color: var(--b-blue); margin-bottom: 15px; text-align: center; }
+        .comp-item { display: flex; justify-content: space-between; margin-bottom: 10px; font-size: 14px; border-bottom: 1px solid #e0e0e0; padding-bottom: 5px; }
+        .comp-label { font-weight: 600; }
+        .comp-val { color: var(--b-blue); font-weight: 700; }
+        .comp-val.promo { color: var(--promo-red); }
+
+        /* Cards */
+        .section-h { font-size: 22px; color: var(--b-blue); margin: 30px 0 20px; text-align: center; }
+        .card { 
+            background: #fff; 
+            border: 1px solid #eee; 
+            border-radius: 12px; 
+            padding: 20px; 
+            margin-bottom: 15px; 
+        }
+        .card h3 { color: var(--b-orange); margin: 0 0 10px 0; font-size: 18px; }
+        .card p { margin: 0; font-size: 14px; color: #444; }
+
+        /* Sticky CTA Promo */
+        .sticky-bar { 
+            position: fixed; bottom: 0; left: 0; width: 100%; 
+            background: white; padding: 15px 20px; 
+            box-shadow: 0 -5px 15px rgba(0,0,0,0.1); z-index: 1000;
+        }
+        .btn { 
+            display: block; background: var(--b-orange); color: white; 
+            text-align: center; padding: 16px; border-radius: 12px; 
+            text-decoration: none; font-weight: 700; font-size: 16px;
+        }
+
+        footer { background: #f9f9f9; padding: 40px 20px 120px; text-align: center; font-size: 12px; color: #999; }
+        .footer-links a { color: var(--b-blue); text-decoration: none; font-weight: 600; margin: 0 10px; }
+    </style>
+</head>
+<body>
+
+    <div class="promo-bar">Offerta a tempo limitato: Risparmia il 24%</div>
+
+    <header>
+        <<a rel="sponsored" href="https://www.awin1.com/awclick.php?gid=416550&mid=9659&awinaffid=2764918&linkid=3421150&clickref=" class="logo">Babbel Lifetime</a>
+    </header>
+
+    <div class="container">
+        <section class="hero">
+            <div class="sconto-badge">-24% ORA</div>
+            <h1>Sblocca il tuo futuro multilingue. <span class="highlight">Per sempre.</span></h1>
+            <p>Accedi a tutte le 14 lingue di Babbel con un unico investimento scontato. Niente più abbonamenti mensili.</p>
+        </section>
+
+        <div class="comp-box">
+            <div class="comp-title">Dettagli dell'Offerta</div>
+            <div class="comp-item">
+                <span class="comp-label">Lingue Incluse:</span>
+                <span class="comp-val">Tutte le 14</span>
+            </div>
+            <div class="comp-item">
+                <span class="comp-label">Accesso:</span>
+                <span class="comp-val">Illimitato (A vita)</span>
+            </div>
+            <div class="comp-item">
+                <span class="comp-label">Offerta Babbel:</span>
+                <span class="comp-val promo">-24% Applicato</span>
+            </div>
+        </div>
+
+        <h2 class="section-h">Perché scegliere il Lifetime oggi?</h2>
+        <div class="card">
+            <h3>Massimo Risparmio</h3>
+            <p>Il piano Lifetime si ripaga da solo in meno di 2 anni rispetto all'abbonamento standard.</p>
+        </div>
+        <div class="card">
+            <h3>Libertà Totale</h3>
+            <p>Impara l'Inglese per lavoro, lo Spagnolo per le vacanze e il Tedesco per sfida. Tutto con un clic.</p>
+        </div>
+        <div class="card">
+            <h3>Nessun Rinnovo</h3>
+            <p>Paghi oggi e non dovrai mai più preoccuparti di addebiti futuri sulla tua carta.</p>
+        </div>
+
+        <h2 class="section-h">Dubbi frequenti</h2>
+        <p style="font-size: 14px; color: #666; text-align: center;">
+            <strong>Le lingue sono davvero tutte incluse?</strong> Sì, avrai accesso completo a tutti i corsi presenti e futuri delle 14 lingue di Babbel.
+        </p>
+    </div>
+
+    <footer>
+        <p><strong>Affiliate Disclosure:</strong> Potrei ricevere una commissione per gli acquisti effettuati tramite i link su questa pagina. Questo non influisce sul prezzo finale scontato per te.</p>
+        <div class="footer-links">
+            <a href="https://it.pinterest.com/Nausicac">Seguici su Pinterest</a> | <a rel="sponsored" href="https://www.awin1.com/awclick.php?gid=416550&mid=9659&awinaffid=2764918&linkid=3421150&clickref=">Babbel Official</a>
+        </div>
+        <p>© 2026 Babbel Lifetime Promo</p>
+    </footer>
+
+    <div class="sticky-bar">
+        <a rel="sponsored" href="https://www.awin1.com/awclick.php?gid=416550&mid=9659&awinaffid=2764918&linkid=3421150&clickref=" class="btn">APPROFITTA SCONTO -24%</a>
+
+    </div>
+
+</body>
+</html>
