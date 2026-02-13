@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Babbel Lifetime | Impara per Sempre</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --b-orange: #FF6E00;
+            --b-blue: #002447;
+            --b-light: #f4f7f9;
+            --text: #1a1a1a;
+            --green: #27ae60;
+        }
+
+        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+        body { 
+            font-family: 'Montserrat', sans-serif; 
+            margin: 0; padding: 0; 
+            background-color: #fff; 
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .container { width: 100%; max-width: 480px; margin: 0 auto; padding: 20px; }
+
+        header { text-align: center; padding: 20px 0; border-bottom: 1px solid #eee; }
+        .logo { font-weight: 700; font-size: 22px; color: var(--b-blue); text-decoration: none; }
+
+        .hero { text-align: center; padding: 40px 20px; background: white; }
+        .hero h1 { font-size: 28px; color: var(--b-blue); line-height: 1.2; margin-bottom: 15px; }
+        .hero p { font-size: 16px; color: #555; margin-bottom: 25px; }
+
+        /* Comparison Table Mobile */
+        .comp-box { 
+            background: var(--b-light); 
+            border-radius: 15px; 
+            padding: 20px; 
+            margin-bottom: 30px;
+            border: 1px solid #e0e0e0;
+        }
+        .comp-title { font-weight: 700; color: var(--b-blue); margin-bottom: 15px; text-align: center; font-size: 18px; }
+        .comp-header { display: flex; justify-content: space-between; margin-bottom: 15px; border-bottom: 1px solid #ddd; padding-bottom: 10px; }
+        .comp-item { display: flex; justify-content: space-between; margin-bottom: 12px; font-size: 13px; align-items: center; }
+        .comp-label { font-weight: 600; width: 40%; }
+        .comp-bad { color: #888; width: 25%; text-align: center; text-decoration: line-through; }
+        .comp-good { color: var(--b-orange); font-weight: 700; width: 35%; text-align: right; }
+
+        .section-h { font-size: 22px; color: var(--b-blue); margin: 40px 0 20px; text-align: center; }
+        
+        /* Checklist Cards */
+        .card { 
+            background: #fff; 
+            border: 1px solid #eee; 
+            border-radius: 12px; 
+            padding: 20px; 
+            margin-bottom: 15px; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+            position: relative;
+        }
+        .card.check::before { content: '✓'; position: absolute; left: -10px; top: 20px; background: var(--green); color: white; width: 25px; height: 25px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; }
+        .card h3 { color: var(--b-blue); margin: 0 0 10px 0; font-size: 17px; }
+        .card p { margin: 0; font-size: 14px; color: #444; }
+
+        /* Pillars Style */
+        .m-item { display: flex; margin-bottom: 25px; background: #fff; padding: 10px; border-radius: 10px; }
+        .m-icon { font-size: 24px; margin-right: 15px; min-width: 40px; text-align: center; }
+        .m-text h4 { margin: 0; font-size: 16px; color: var(--b-blue); }
+        .m-text p { margin: 5px 0 0; font-size: 14px; color: #666; }
+
+        /* Roadmap Section */
+        .roadmap { border-left: 3px solid var(--b-orange); margin-left: 20px; padding-left: 20px; }
+        .step { position: relative; margin-bottom: 30px; }
+        .step::before { content: ''; position: absolute; left: -28px; top: 5px; width: 12px; height: 12px; background: var(--b-orange); border-radius: 50%; }
+        .step-t { font-weight: 700; color: var(--b-blue); display: block; font-size: 14px; }
+        .step-p { font-size: 13px; color: #666; margin: 5px 0 0; }
+
+        .lang-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 20px; }
+        .tag { background: var(--b-blue); color: white; padding: 6px 12px; border-radius: 20px; font-size: 12px; }
+
+        /* Social Proof */
+        .testimonial { font-style: italic; background: #fdfdfd; border-left: 4px solid var(--b-orange); padding: 15px; margin: 20px 0; font-size: 14px; }
+
+        footer { background: #f9f9f9; padding: 40px 20px 120px; text-align: center; font-size: 12px; color: #999; }
+        .footer-links a { color: var(--b-blue); text-decoration: none; font-weight: 600; margin: 0 10px; }
+
+        .sticky-bar { 
+            position: fixed; bottom: 0; left: 0; width: 100%; 
+            background: white; padding: 15px 20px; 
+            box-shadow: 0 -5px 15px rgba(0,0,0,0.05); z-index: 1000;
+        }
+        .btn { 
+            display: block; background: var(--b-orange); color: white; 
+            text-align: center; padding: 16px; border-radius: 12px; 
+            text-decoration: none; font-weight: 700; font-size: 16px;
+            transition: transform 0.2s;
+        }
+        .btn:active { transform: scale(0.98); }
+    </style>
+</head>
+<body>
+
+    <header>
+       <a rel="sponsored" href="https://www.awin1.com/awclick.php?gid=322314&mid=9659&awinaffid=2764918&linkid=2038222&clickref=" class="logo">Babbel</a>
+    </header>
+    </header>
+
+    <div class="container">
+        <section class="hero">
+            <h1>Smetti di giocare, inizia a parlare davvero.</h1>
+            <p>Il metodo serio per padroneggiare una lingua, ora con un unico pagamento per sempre.</p>
+        </section>
+
+        <div class="comp-box">
+            <div class="comp-title">Babbel vs App "Gratuite"</div>
+            <div class="comp-header">
+                <span style="width:40%"></span>
+                <span class="comp-bad" style="text-decoration:none; font-size:10px">GIOCHI</span>
+                <span class="comp-good" style="font-size:10px">BABBEL</span>
+            </div>
+            <div class="comp-item">
+                <span class="comp-label">Metodo</span>
+                <span class="comp-bad">Casuale</span>
+                <span class="comp-good">Scientifico</span>
+            </div>
+            <div class="comp-item">
+                <span class="comp-label">Grammatica</span>
+                <span class="comp-bad">Assente</span>
+                <span class="comp-good">Spiegata</span>
+            </div>
+            <div class="comp-item">
+                <span class="comp-label">Utilità</span>
+                <span class="comp-bad">Bassa</span>
+                <span class="comp-good">Reale</span>
+            </div>
+        </div>
+
+        <h2 class="section-h">Perché funziona?</h2>
+        <div class="m-item">
+            <div class="m-icon">🎓</div>
+            <div class="m-text">
+                <h4>Grammatica Intuitiva</h4>
+                <p>Capisci finalmente il "perché" delle regole con spiegazioni nella tua lingua.</p>
+            </div>
+        </div>
+        <div class="m-item">
+            <div class="m-icon">🗣️</div>
+            <div class="m-text">
+                <h4>Focus Conversazione</h4>
+                <p>Dialoghi realistici per ordinare al bar, viaggiare e lavorare.</p>
+            </div>
+        </div>
+        <div class="m-item">
+            <div class="m-icon">🧠</div>
+            <div class="m-text">
+                <h4>Ripasso Intelligente</h4>
+                <p>L'app sa cosa stai per dimenticare e te lo ripropone al momento giusto.</p>
+            </div>
+        </div>
+        <div class="m-item">
+            <div class="m-icon">⏱️</div>
+            <div class="m-text">
+                <h4>Lezioni da 15 minuti</h4>
+                <p>Il tempo di un caffè per fare progressi reali ogni singolo giorno.</p>
+            </div>
+        </div>
+
+        <h2 class="section-h">I tuoi primi 90 giorni</h2>
+        <div class="roadmap">
+            <div class="step">
+                <span class="step-t">Giorno 1-7: Le Basi</span>
+                <p class="step-p">Impari a presentarti e a gestire i primi saluti con la pronuncia corretta.</p>
+            </div>
+            <div class="step">
+                <span class="step-t">Giorno 30: Sopravvivenza</span>
+                <p class="step-p">Sei in grado di cavartela al ristorante, in hotel e nei negozi.</p>
+            </div>
+            <div class="step">
+                <span class="step-t">Giorno 90: Sicurezza</span>
+                <p class="step-p">Sostieni conversazioni quotidiane e capisci i concetti principali dei dialoghi.</p>
+            </div>
+        </div>
+
+        <h2 class="section-h">Fa per te?</h2>
+        <div class="card check">
+            <h3>Vuoi risultati concreti</h3>
+            <p>Non cerchi un passatempo, ma vuoi davvero imparare a parlare.</p>
+        </div>
+        <div class="card check">
+            <h3>Pochi minuti al giorno</h3>
+            <p>Hai una vita impegnata e cerchi un metodo che si adatti ai tuoi ritmi.</p>
+        </div>
+
+        <div class="testimonial">
+            "Dopo mesi di app gratuite conoscevo solo parole a caso. Con Babbel ho finalmente capito come costruire una frase. Vale ogni centesimo."<br>
+            <strong>– Marco G. (Utente Verificato)</strong>
+        </div>
+
+        <h2 class="section-h">Tutte le 14 Lingue</h2>
+        <div class="lang-grid">
+            <span class="tag">Inglese</span> <span class="tag">Spagnolo</span> <span class="tag">Francese</span>
+            <span class="tag">Tedesco</span> <span class="tag">Italiano</span> <span class="tag">Portoghese</span>
+            <span class="tag">Svedese</span> <span class="tag">Turco</span> <span class="tag">Olandese</span>
+            <span class="tag">Polacco</span> <span class="tag">Indonesiano</span> <span class="tag">Norvegese</span>
+        </div>
+    </div>
+
+    <footer>
+        <p><strong>Affiliate Disclosure:</strong> In qualità di partner, potrei ricevere una commissione per gli acquisti effettuati tramite i link su questa pagina senza alcun costo extra per te.</p>
+        <div class="footer-links">
+           <a href="https://it.pinterest.com/Nausicac/">Pinterest</a> |  <a rel="sponsored" href="https://www.awin1.com/awclick.php?gid=322314&mid=9659&awinaffid=2764918&linkid=2038222&clickref=">Babbel</a>
+        </div>
+        <p>© 2026 Promo Babbel - Impara per Sempre</p>
+    </footer>
+
+    <div class="sticky-bar">
+        <a rel="sponsored" href="https://www.awin1.com/awclick.php?gid=322314&mid=9659&awinaffid=2764918&linkid=2038222&clickref=" class="btn"> PROVA LA PRIMA LEZIONE GRATIS</a>
+    </div>
+
+</body>
+</html>
