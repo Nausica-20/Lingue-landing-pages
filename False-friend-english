@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20 Falsi Amici in Inglese - Guida Gratuita</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* RESET E VARIABILI */
+        :root {
+            --primary-orange: #f57c00;
+            --primary-hover: #e65100;
+            --text-dark: #333333;
+            --text-light: #666666;
+            --bg-light: #f9f9f9;
+            --white: #ffffff;
+            --error: #d32f2f;
+            --success: #388e3c;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+
+        /* HEADER */
+        header {
+            background-color: var(--white);
+            padding: 20px 5%;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-orange);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .cta-button-small {
+            background-color: var(--primary-orange);
+            color: var(--white);
+            padding: 10px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: background 0.3s;
+        }
+
+        .cta-button-small:hover {
+            background-color: var(--primary-hover);
+        }
+
+        /* HERO SECTION */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #fff3e0 0%, #ffffff 100%);
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            color: var(--text-dark);
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: var(--primary-orange);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+        }
+
+        /* CARD GRID SECTION */
+        .content-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .intro-text {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: var(--white);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-top: 4px solid var(--primary-orange);
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .english-word {
+            font-size: 1.5rem;
+            font-family: 'Montserrat', sans-serif;
+            color: var(--primary-orange);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .flag {
+            font-size: 1.2rem;
+        }
+
+        .meaning-box {
+            margin-bottom: 10px;
+        }
+
+        .wrong {
+            color: var(--error);
+            font-size: 0.95rem;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .wrong span {
+            text-decoration: line-through;
+            opacity: 0.7;
+        }
+
+        .correct {
+            color: var(--success);
+            font-weight: 700;
+            font-size: 1.1rem;
+            display: block;
+        }
+
+        /* CTA FOOTER */
+        .cta-section {
+            background-color: var(--primary-orange);
+            color: var(--white);
+            text-align: center;
+            padding: 80px 20px;
+            margin-top: 60px;
+        }
+
+        .cta-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .cta-button-large {
+            background-color: var(--white);
+            color: var(--primary-orange);
+            padding: 18px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 1.2rem;
+            display: inline-block;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .cta-button-large:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">🇬🇧 EnglishTips</a>
+       <a rel="sponsored" href="https://www.awin1.com/awclick.php?gid=322314&mid=9659&awinaffid=2764918&linkid=2038224&clickref=" class="cta-button-small">Babbel</a>
+    </header>
+
+    <section class="hero">
+        <h1>I 20 <span>Falsi Amici</span> più insidiosi</h1>
+        <p>Sembrano italiani, ma non lo sono. Evita figuracce e impara il vero significato di queste parole inglesi.</p>
+        <a href="#lista" class="cta-button-small" style="background-color: #333;">Vai alla lista 👇</a>
+    </section>
+
+    <section id="lista" class="content-container">
+        <div class="intro-text">
+            <h2>Non cadere nella trappola!</h2>
+            <p>Ecco la lista definitiva per parlare come un madrelingua.</p>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <div class="english-word">Actually <span class="flag">🇬🇧</span></div>
+                <div class="meaning-box">
+                    <span class="wrong">❌ Non è: <span>Attualmente</span></span>
+                    <span class="correct">✅ È: In realtà</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="english-word">Annoy <span class="flag">🇬🇧</span></div>
+                <div class="meaning-box">
+                    <span class="wrong">❌ Non è: <span>Annoiare</span></span>
+                    <span class="correct">✅ È: Infastidire</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="english-word">Argument <span class="flag">🇬🇧</span></div>
+                <div class="meaning-box">
+                    <span class="wrong">❌ Non è: <span>Argomento</span></span>
+                    <span class="correct">✅ È: Litigio / Discussione</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="english-word">Brave <span class="flag">🇬🇧</span></div>
+                <div class="meaning-box">
+                    <span class="wrong">❌ Non è: <span>Bravo</span></span>
+                    <span class="correct">✅ È: Coraggioso</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="english-word">Camera <span class="flag">🇬🇧</span></div>
+                <div class="meaning-box">
+                    <span class="wrong">❌ Non è: <span>Camera (stanza)</span></span>
+                    <span class="correct">✅ È: Macchina fotografica</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="english-word">Educated <span class="flag">🇬🇧</span></div>
+                <div class="meaning-box">
+                    <span class="wrong">❌ Non è: <span>Educato</span></span>
+                    <span class="correct">✅ È: Istruito</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="english-word">Eventually <span class="flag">🇬🇧</span></div>
+                <div class="meaning-box">
+                    <span class="wrong">❌ Non è: <span>Eventualmente</span></span>
+                    <span class="correct">✅ È: Alla fine / Infine</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="english-word">Factory <span class="flag">🇬🇧</span></div>
+                <div class="meaning-box">
+                    <span class="wrong">❌ Non è: <span>Fattoria</span></span>
+                    <span class="correct">✅ È: Fabbrica</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="english-word">Library <span class="flag">🇬🇧</span></div>
+                <div class="meaning-box">
+                    <span class="wrong">❌ Non è: <span>Libreria (negozio)</span></span>
+                    <span class="correct">✅ È: Biblioteca</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="english-word">Parents <span class="flag">🇬🇧</span></div>
+                <div class="meaning-box">
+                    <span class="wrong">❌ Non è: <span>Parenti</span></span>
+                    <span class="correct">✅ È: Genitori</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="english-word">Pretend <span class="flag">🇬🇧</span></div>
+                <div class="meaning-box">
+                    <span class="wrong">❌ Non è: <span>Pretendere</span></span>
+                    <span class="correct">✅ È: Fingere</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="english-word">Preservative <span class="flag">🇬🇧</span></div>
+                <div class="meaning-box">
+                    <span class="wrong">❌ Non è: <span>Preservativo</span></span>
+                    <span class="correct">✅ È: Conservante</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="english-word">Rumor <span class="flag">🇬🇧</span></div>
+                <div class="meaning-box">
+                    <span class="wrong">❌ Non è: <span>Rumore</span></span>
+                    <span class="correct">✅ È: Pettegolezzo / Voce</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="english-word">Sensible <span class="flag">🇬🇧</span></div>
+                <div class="meaning-box">
+                    <span class="wrong">❌ Non è: <span>Sensibile</span></span>
+                    <span class="correct">✅ È: Ragionevole / Sensato</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="english-word">Sensitive <span class="flag">🇬🇧</span></div>
+                <div class="meaning-box">
+                    <span class="wrong">❌ Non è: <span>Sensitivo</span></span>
+                    <span class="correct">✅ È: Sensibile</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="english-word">Terrific <span class="flag">🇬🇧</span></div>
+                <div class="meaning-box">
+                    <span class="wrong">❌ Non è: <span>Terrificante</span></span>
+                    <span class="correct">✅ È: Fantastico / Magnifico</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="english-word">Vacancy <span class="flag">🇬🇧</span></div>
+                <div class="meaning-box">
+                    <span class="wrong">❌ Non è: <span>Vacanza</span></span>
+                    <span class="correct">✅ È: Posto libero (lavoro/hotel)</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="english-word">Accident <span class="flag">🇬🇧</span></div>
+                <div class="meaning-box">
+                    <span class="wrong">❌ Non è: <span>Accidente</span></span>
+                    <span class="correct">✅ È: Incidente</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="english-word">Large <span class="flag">🇬🇧</span></div>
+                <div class="meaning-box">
+                    <span class="wrong">❌ Non è: <span>Largo</span></span>
+                    <span class="correct">✅ È: Grande</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="english-word">Fabric <span class="flag">🇬🇧</span></div>
+                <div class="meaning-box">
+                    <span class="wrong">❌ Non è: <span>Fabbrica</span></span>
+                    <span class="correct">✅ È: Tessuto / Stoffa</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <h2>Vuoi parlare senza errori?</h2>
+        <p style="margin-bottom: 30px;">Impara l'inglese reale in soli 15 minuti al giorno.</p>
+        <a rel="sponsored" href="https://www.awin1.com/awclick.php?gid=322314&mid=9659&awinaffid=2764918&linkid=2038224&clickref=" class="cta-button-large">Inizia oggi con Babbel</a>
+    </section>
+
+    <footer style="text-align: center; padding: 20px; font-size: 0.8rem; color: #888;">
+        &copy; 2024 Learning Tips. All rights reserved.
+    </footer>
+
+</body>
+</html>
